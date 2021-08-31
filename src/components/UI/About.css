@@ -1,0 +1,44 @@
+.main{
+    padding: 7%;
+}
+
+.mainHeading{
+    font-size: 3.5vh;
+    padding: 3%;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.mainText{
+    padding: 3%;
+    text-align: center;
+    letter-spacing: .5px;
+    font-weight: lighter;
+}
+
+.greenBack{
+    background-color: #6A3940;
+    color: white;
+}
+
+.greenBack h2, .greenBack p, .greenBack a{
+    color: #fbf7f4;
+}
+
+.contact{
+    margin: 7%;
+}
+
+.main button{
+    padding: 5% 8%;
+    background-color: #4169e1;
+    border-radius: 20px;;
+    margin-top: 5%;
+    font-size: 2vh;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: none;
+    color: #f5f5ff;
+    letter-spacing: 2px;
+}

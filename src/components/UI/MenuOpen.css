@@ -1,0 +1,35 @@
+.menuText{
+    padding-bottom: 7%;
+    text-align: center;
+}
+
+.mealOptions{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    text-align: center;
+}
+
+.glutenImg{
+    width: 45%;
+}
+
+@media only screen and (min-width: 600px){
+    .menuText{
+        padding-bottom: 3%;
+        text-align: center;
+    }
+
+    .mealOptions{
+        display: grid;
+        grid-template-columns: 85% 15%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        text-align: center;
+    }
+
+    .glutenImg{
+        width: 25%;
+    }
+}

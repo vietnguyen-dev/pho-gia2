@@ -1,0 +1,24 @@
+.menuItem{
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 5% 75% 20%;
+    grid-gap: 1vh;
+    padding: 2% 3%;
+}
+
+.itemHead{
+    font-size: 2vh;
+    padding-bottom: 1%;
+    font-weight: bold;
+}
+
+.itemBody{
+    font-size: 1.75vh;
+    padding-bottom: 2%;
+    font-weight: lighter;
+}
+
+
+.itemPrice{
+    font-size: 2vh;
+}

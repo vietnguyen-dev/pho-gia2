@@ -1,0 +1,17 @@
+.imgTextDiv{
+    padding: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center 
+}
+
+.slideDiv{
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.center{ 
+    text-align: center;
+}
