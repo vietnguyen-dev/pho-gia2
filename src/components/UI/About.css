@@ -42,3 +42,10 @@
     color: #f5f5ff;
     letter-spacing: 2px;
 }
+
+@media only screen and (min-width: 600px){
+    .main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
