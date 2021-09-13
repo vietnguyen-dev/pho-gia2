@@ -5,10 +5,8 @@ import Logo from "../UI/Logo";
 const About = () => {
     return (
       <div className="main sandBack">
-        <div>
           <h2 className="mainHeading topDown">Welcome to</h2>
           <Logo />
-        </div>
         <div className="mainText downUp">
           <p>
             Vietnamese restaurant serving pho soups, noodles and rice dishes in
