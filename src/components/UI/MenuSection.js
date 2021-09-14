@@ -17,7 +17,7 @@ const MenuSection = props => {
           <AccordionItemButton>{props.name}</AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
-          <p style={{padding: `2% 3%`, lineHeight: `1.5`}}>{props.servedWith}</p>
+          <p style={{padding: `2% 3%`, lineHeight: `1.5`, textAlign: `center`}}>{props.servedWith}</p>
           {props.menuItem.map((item) => (
             <MenuItem
               key={item.id}

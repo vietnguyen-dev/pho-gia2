@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext } from 'react'
-import WidthContext from '../../store/width-context';
+import React, { useState} from 'react'
+//import WidthContext from '../../store/width-context';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Menu from '../Pages/Menu';
 import Home from '../Pages/Home';
@@ -8,31 +8,30 @@ import './nav.css'
 
 const Body = () => {
     const [menuState, setMenuState] = useState(true);
-    const ctx = useContext(WidthContext)
+    // const ctx = useContext(WidthContext)
 
     const settingMenu = state =>{
       setMenuState(state)
     }
 
-    useEffect(() => {
-      if (ctx.width > 600) {
-        setMenuState(false)
-      } else {
-        setMenuState(true)
-      }
-    }, [ctx.width])
+    let choosingMenu = `navItems ${+menuState ? `hide` : `show`}`
+    // useEffect(() => {
+    //   console.log(ctx.width)
+    //   if (ctx.width > 600) {
+    //     setMenuState(false)
+    //   } else if (ctx.width > ) {
+    //     setMenuState(true)
+    //   }
+    // }, [ctx.width])
 
     const NavBar = () =>{
       return (
-        <ul className={`navItems ${menuState ? "centerRight centerStay" : "rightCenter"}`}>
-          <li className="navLink" onClick={() => setMenuState(true)}>
+        <ul className={choosingMenu}>
+          <li className="navLink"ß>
             <Link to="/">Home</Link>
           </li>
-          <li className="navLink" onClick={() => setMenuState(true)}>
+          <li className="navLink">
             <Link to="/menu">Menu</Link>
-          </li>
-          <li className="navLink" onClick={() => setMenuState(true)}>
-            <a href="http://places.singleplatform.com/pho-gia/menu?ref=google">Online Ordering</a>
           </li>
         </ul>
       );
@@ -46,8 +45,8 @@ const Body = () => {
               <div>
                 <p></p>
               </div>
-              <Toggle currentMenu={menuState} clickEvent={settingMenu} />
-              <div className="navUl">{menuState || <NavBar />}</div>
+              <Toggle clickEvent={settingMenu} currentMenu={menuState}/>
+              <NavBar />
             </div>
           </div>
           <Switch>
