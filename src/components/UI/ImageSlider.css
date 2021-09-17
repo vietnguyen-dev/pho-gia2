@@ -15,3 +15,11 @@
 .center{ 
     text-align: center;
 }
+
+.itemNameSlider{
+    padding: 1%;
+    border-radius: 15rem;
+    background-color: black;
+    opacity: .8;
+    color: white;
+}

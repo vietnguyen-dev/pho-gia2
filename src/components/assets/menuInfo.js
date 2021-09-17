@@ -12,9 +12,9 @@ let sections = [
         dietType: "gluten free",
         choices: [ 
           {id: 1, meat: `Chicken, Pork, or Tofu`, price: 5.50},
-          {id: 2, meat: `Chicken, Pork, or Tofu`, price: 5.50},
-          {id: 3, meat: `Chicken, Pork, or Tofu`, price: 5.50},
-          {id: 4, meat: `Chicken, Pork, or Tofu`, price: 5.50},
+          {id: 2, meat: `Beef or Shrimp`, price: 5.95},
+          {id: 3, meat: `Combined Shrimp and Pork OR Chicken`, price: 7.50},
+          {id: 4, meat: `Combined Shrimp, Pork, and Chicken `, price: 8.50},
         ]
       },
       {
@@ -61,9 +61,44 @@ let sections = [
       },
       {
         id: 8,
-        name: " Veggie Crispy Eggs Rolls - Cha Gio Chay",
+        name: "Veggie Crispy Eggs Rolls - Cha Gio Chay",
         description: 'Cripsy rolls with tofu, mushrooms, shredded taro, onions, carrots served with sweet chili or fish sauce',
         price: '5.50',
+        dietType: "vegetarian",
+      },
+      {
+        id: 9,
+        name: "Chicken Wings - Canh Ga Chien",
+        description: 'Cripsy rolls with tofu, mushrooms, shredded taro, onions, carrots served with sweet chili or fish sauce',
+        price: '6.95',
+        dietType: "none",
+      },
+      {
+        id: 10,
+        name: "Cocout Breaded Shrimp",
+        description: 'Cripsy deep fried coconut breaded shrimp served with chili sauce',
+        price: '6.95',
+        dietType: "none",
+      },
+      {
+        id: 11,
+        name: "Pepper Salted Shrimp or Calimari",
+        description: 'Crispy deep fried pepper salted shrimp or calimari with carrots and onions',
+        price: '7.95',
+        dietType: "none",
+      },
+      {
+        id: 12,
+        name: "Battered Cod fish fillets",
+        description: 'Deep fried battered Cod fish fillets',
+        price: '4.50',
+        dietType: "none",
+      },
+      {
+        id: 13,
+        name: "French Fries",
+        description: 'Our French Fries are crispy and golden on the outside and fluffy on the inside with 0 grams trans fat',
+        price: '3.95',
         dietType: "none",
       },
     ],

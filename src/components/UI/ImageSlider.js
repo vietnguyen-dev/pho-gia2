@@ -30,8 +30,8 @@ const ImageSlider = props => {
               className="slideDiv"
               style={{ backgroundImage: `url(${photosArr[0].url})`}}>
               <div className="imgTextDiv">
-                <div className="center">
-                  <p>Pho Tai</p>
+                <div className="center ">
+                  <h2 className='itemNameSlider'>Pho Tai</h2>
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@ const ImageSlider = props => {
               className="slideDiv"
               style={{ backgroundImage: `url(${photosArr[1].url})`}}>
               <div className="imgTextDiv">
-                <h2>Bo Kho</h2>
+                <h2 className='itemNameSlider'>Bo Kho</h2>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@ const ImageSlider = props => {
               style={{ backgroundImage: `url(${photosArr[2].url})`}}
             >
               <div className="imgTextDiv">
-                <h2>Bun Thit Nuong</h2>
+                <h2 className='itemNameSlider'>Bun Thit Nuong</h2>
               </div>
             </div>
           </div>
