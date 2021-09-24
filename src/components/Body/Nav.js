@@ -14,15 +14,7 @@ const Body = () => {
       setMenuState(state)
     }
 
-    let choosingMenu = `navItems ${+menuState ? `hide` : `show`}`
-    // useEffect(() => {
-    //   console.log(ctx.width)
-    //   if (ctx.width > 600) {
-    //     setMenuState(false)
-    //   } else if (ctx.width > ) {
-    //     setMenuState(true)
-    //   }
-    // }, [ctx.width])
+    let choosingMenu = `navItems ${menuState ? `hide` : `show`}`
 
     const NavBar = () =>{
       return (
@@ -43,7 +35,7 @@ const Body = () => {
           <div className="wholeBar">
             <div className="navDiv">
               <div>
-                <p></p>
+                <p style={{color: `white`}}>Pho Gia Milwaukie</p>
               </div>
               <Toggle clickEvent={settingMenu} currentMenu={menuState}/>
               <NavBar />

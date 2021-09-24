@@ -101,7 +101,7 @@ let sections = [
         price: '3.95',
         dietType: "none",
       },
-    ],
+    ]
   },
   {
     id: 1,
@@ -145,7 +145,7 @@ let sections = [
         price: "10.95",
         dietType: "gluten free",
       },
-    ],
+    ]
   },
   {
     id: 2,
@@ -319,7 +319,7 @@ let sections = [
           {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
         ]
       },
-    ],
+    ]
   },
   {
     id: 3,
@@ -328,22 +328,80 @@ let sections = [
       "Served with egg noodles, fresh bean sprouts, basil leaves, onion, cilantro, and a lime wedge except for entrees with *",
     items: [
       {
-        id: 136,
+        id: 56,
         name: "Udon Soup",
         description:
           "Chicken or tofu with brocoli, carrot, cilantro, onions, mushrooms, and seaweed",
-        price: "8.95",
+        price: "choice",
         dietType: "vegetarian",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
       },
       {
-        id: 137,
-        name: "Udon Seafood Soup",
+        id: 57,
+        name: "Wonton Egg Noodle Soup",
         description:
-          "Shrimp, Scallop, Squid, brocoli, carrot, cilantro, onions, mushrooms, and seaweed",
+          "Egg noodles, shrimp, pork, pork wonton, baby bok choy, topped with fried garlic and chives with pork broth",
+        price: "9.95",
+        dietType: "none",
+      },
+      {
+        id: 58,
+        name: "Wonton Soup (no noodles)",
+        description:
+          "Pork wonton, baby bok choy, topped with fried garlic and chives with pork broth",
+        price: "8.95",
+        dietType: "none",
+      },
+      {
+        id: 59,
+        name: "Egg Noodle Soup Special - Mi Dac Biet",
+        description:
+          "Combination of pork, shrimp, quail eggs, celery, chives, topped with fried shallots with pork broth",
         price: "10.95",
         dietType: "none",
       },
-    ],
+      {
+        id: 60,
+        name: "Seafood Rice or Egg Noodle Soup - Hu Tieu Hai San Dac Biet",
+        description:
+          "Shrimps, scallops, mussel, squid, quail eggs, onion, celery, chives, topped with fried shallots with pork broth",
+        price: "8.95",
+        dietType: "none",
+      },
+      {
+        id: 61,
+        name: "Tofu with Rice or Egg Noodle Soup",
+        description:
+          "Tofu with rice noodle or egg noodles, cilantro, onion, chives, celery, topped with fried shallots, with chicken or pork broth",
+        price: "9.95",
+        dietType: "both",
+      },
+      {
+        id: 62,
+        name: "Egg Noodle Chicken Breast Soup - Mi Ga",
+        description:
+          "Egg noodles, chicken breasat, cilantro, onions, chives, celery, topped with fried shallots with chicken or pork broth",
+        price: "9.95",
+        dietType: "none",
+      },
+      {
+        id: 63,
+        name: "Ramen Noodles",
+        description:
+          "Ramen noodles, cilantro, onions, chives, celery, and topped with fried shallots with chicken or pork broth",
+        price: "choice",
+        dietType: "none",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "10.50"},
+          {id: 2, meat: `Beef or Shrimp`, price: "11.50"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+    ]
   },
   {
     id: 4,
@@ -352,21 +410,97 @@ let sections = [
       "Bowl of Vermicelli rice noodles served with lettuce, bean sprouts, basil, cilantro, cucumbers, fried fresh green onions, fried shallots, picked carrots, and radish, roasted peanutes, with a side of housemade fish sauce",
     items: [
       {
-        id: 56,
+        id: 70,
         name: "Grilled Pork",
-        description: "Bowl of Vermicelli with choice of grilled marinated pork",
-        price: "8.95",
+        description: "Bowl of vermicelli with grilled marinated pork",
+        price: "9.95",
         dietType: "none",
       },
       {
-        id: 57,
+        id: 71,
         name: "Grilled Chicken",
-        description:
-          "Bowl of Vermicelli with choice of grilled marinated chicken",
-        price: "8.95",
+        description: "Bowl of vermicelli with grilled marinated chicken",
+        price: "9.95",
         dietType: "none",
       },
-    ],
+      {
+        id: 72,
+        name: "Grilled Shrimp",
+        description: "Bowl of vermicelli with grilled marinated shrimp",
+        price: "10.95",
+        dietType: "none",
+      },
+      {
+        id: 73,
+        name: "Grilled Pork and Shrimp",
+        description: "Bowl of vermicelli with grilled marinated pork and shrimp",
+        price: "10.95",
+        dietType: "none",
+      },
+      {
+        id: 74,
+        name: "Grilled Chicken and Shrimp",
+        description: "Bowl of vermicelli with grilled marinated chicken and shrimp",
+        price: "10.95",
+        dietType: "none",
+      },
+      {
+        id: 75,
+        name: "Crispy Egg Roll Noodles",
+        description: "Bowl of vermicelli with deep fried crispy egg rolls",
+        price: "10.95",
+        dietType: "none",
+      },
+      {
+        id: 76,
+        name: "Crispy Vegetarian Egg Roll Noodles",
+        description: "Bowl of vermicelli with deep fried vegetarian crispy egg rolls",
+        price: "10.95",
+        dietType: "vegetarian",
+      },
+      {
+        id: 77,
+        name: "Grilled Pork or Chicken, Shrimpm and Crispy Egg Roll Combo",
+        description: "Bowl of vermicelli noodles with choice of grilled marinated pork or chicken, shrimp, and deep fried vegetarian crispy egg rolls",
+        price: "12.95",
+        dietType: "none",
+      },
+      {
+        id: 78,
+        name: "Garlic Tofu",
+        description: "Bowl of vermicelli noodles with stir fried tofu",
+        price: "9.95",
+        dietType: "vegetarian",
+      },
+      {
+        id: 79,
+        name: "Lemongrass Tofu",
+        description: "Bowl of vermicelli noodles with stir fried tofu",
+        price: "9.95",
+        dietType: "vegetarian",
+      },
+      {
+        id: 80,
+        name: "Lemongrass Chili Chicken",
+        description: "Bowl of vermicelli with stir fried mild spicy lemongrass chicken",
+        price: "9.95",
+        dietType: "none",
+      },
+      {
+        id: 81,
+        name: "Lemongrass Seafood",
+        description: "Bowl of vermicelli with stir fried lemongrassm shrimp, scallop, mussel, and squid",
+        price: "12.50",
+        dietType: "none",
+      },
+      {
+        id: 82,
+        name: "Lemongrass Beef",
+        description: "Bowl of Vermicelli with stir fried lemongrass beef",
+        price: "10.95",
+        dietType: "none",
+      },
+    ]
   },
   {
     id: 5,
@@ -375,7 +509,7 @@ let sections = [
       "All rice entrees served with steamed rice or rice noodles and stir fried vegetables except for entrees with *",
     items: [
       {
-        id: 75,
+        id: 89,
         name: "Special Rice Combo",
         description:
           "Grilled marinated pork or chicken, shrimp, eggs, with cucumber, tomato and lettuce or stir fried vegetables",
@@ -383,11 +517,106 @@ let sections = [
         dietType: "none",
       },
       {
-        id: 76,
-        name: "Chicken or Pork Fried Rice",
+        id: 90,
+        name: "Chicken or Pork Fried Rice *",
         description:
-          "Fried rice with chien or pork, eggs, peas, corn, onions, and carrots",
-        price: "8.95",
+          "Fried rice with chicken or pork, eggs, peas, corn, onions, and carrots",
+        price: "choice",
+        dietType: "none",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 91,
+        name: "Pineapple Fried Rice *",
+        description:
+          "Fried rice with egg, pineapple, onion, and basil leaf",
+        price: "choice",
+        dietType: "vegetarian",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 92,
+        name: "Spicy Vegetables with Chicken or Tofu",
+        description:
+          "Spicy vegetables, tossed in spicy homemade sauce",
+        price: "9.95",
+        dietType: "vegetarian",
+      },
+      {
+        id: 93,
+        name: "Grilled Pork or Chicken",
+        description:
+          "Grilled marinated pork or chicken with stir fried vegetables",
+        price: "9.95",
+        dietType: "none",
+      },
+      {
+        id: 94,
+        name: "Grilled Pork or Chicken and Shrimp",
+        description:
+          "Grilled marinated pork or chicken and shrimp with stir fried vegetables",
+        price: "9.95",
+        dietType: "none",
+      },
+      {
+        id: 95,
+        name: "Teriyaki Chicken",
+        description:
+          "Steamed rice or noodles, grilled marinated chicken and fresh steamed mixed vegetables",
+        price: "9.95",
+        dietType: "none",
+      },
+      {
+        id: 96,
+        name: "Chicken Satay",
+        description:
+          "Stir fried marinated chicken in curry sauce with carrots and onions",
+        price: "9.95",
+        dietType: "none",
+      },
+      {
+        id: 97,
+        name: "Ginger Chicken or Tofu",
+        description:
+          "Grilled marinated chicken or deep fried tofu with ginger sauce with mixed vegetables",
+        price: "9.75",
+        dietType: "vegetarian",
+      },
+      {
+        id: 98,
+        name: "Lemongrass Chili Chicken or Tofu",
+        description:
+          "Grilled marinated chicken or deep fried fofu stir fried in mild spicy chili lemongrass with mixed vegetables",
+        price: "9.75",
+        dietType: "vegetarian",
+      },
+      {
+        id: 99,
+        name: "Wok Broccoli Chicken or Pork or Tofu",
+        description:
+          "Stir fried marinated chicken in curry sauce with carrots and onions",
+        price: "choice",
+        dietType: "vegetarian",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 100,
+        name: "Orange Chicken *",
+        description:
+          "Deep fried marinated flour chicken topped with orange homemade sauce",
+        price: "9.95",
         dietType: "none",
       },
     ],
