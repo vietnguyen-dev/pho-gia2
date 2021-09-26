@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 //import WidthContext from '../../store/width-context';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Menu from '../Pages/Menu';
@@ -8,21 +8,22 @@ import './nav.css'
 
 const Body = () => {
     const [menuState, setMenuState] = useState(true);
-    // const ctx = useContext(WidthContext)
+
+    // useEffect(() =>{
+    //   console.log(menuState)
+    // }, [menuState])
 
     const settingMenu = state =>{
       setMenuState(state)
     }
 
-    let choosingMenu = `navItems ${menuState ? `hide` : `show`}`
-
     const NavBar = () =>{
       return (
-        <ul className={choosingMenu}>
-          <li className="navLink"ß>
+        <ul className={`navItems ${menuState ? `hide` : `show`}`}>
+          <li onClick={() => settingMenu(true)} className="navLink">
             <Link to="/">Home</Link>
           </li>
-          <li className="navLink">
+          <li onClick={() => settingMenu(true)} className="navLink">
             <Link to="/menu">Menu</Link>
           </li>
         </ul>
@@ -35,7 +36,7 @@ const Body = () => {
           <div className="wholeBar">
             <div className="navDiv">
               <div>
-                <p style={{color: `white`}}>Pho Gia Milwaukie</p>
+                <p></p>
               </div>
               <Toggle clickEvent={settingMenu} currentMenu={menuState}/>
               <NavBar />
@@ -43,10 +44,10 @@ const Body = () => {
           </div>
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Home/>
             </Route>
             <Route exact path="/menu">
-              <Menu />
+              <Menu/>
             </Route>
           </Switch>
         </Router>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Page from '../UI/Page'
 import MenuSection from '../UI/MenuSection';
 import {
   Accordion,
@@ -12,7 +11,7 @@ import "react-accessible-accordion/dist/fancy-example.css";
 
 const Menu = () => {
     return (
-      <Page heading="Menu">
+      <>
         <MenuOpen />
         <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
           {sections.map((section) => (
@@ -25,7 +24,7 @@ const Menu = () => {
             />
           ))}
         </Accordion>
-      </Page>
+      </>
     );
 }
 

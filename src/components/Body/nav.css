@@ -13,18 +13,20 @@
 
 .wholeBar{
     background-color: #6A3940;
+    position: sticky;
+    top: 0;
 }
 
 .navItems{
-    position: absolute;
-    top: 6%;
+    /* position: absolute;
+    top: 8%; */
     right: 0px;
     list-style-type: none;
     background-color: #6A3940;
     z-index: 1;
     height: 100%;
     width: 50%;
-    opacity: .9;
+    opacity: .7;
 }
 
 a{
@@ -42,11 +44,29 @@ ul a:hover{
 }
 
 .hide{
-    display: none;
+    transform: translateX(100%);
+    /* animation: hide .3s .1s; */
 }
 
 .show{
-    display: block;
+    transform: translateX(0%);
+    /* animation: show .3s .1s; */
+}
+
+@keyframes show {
+    from {
+        transform: translateX(100%)
+    } to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes hide {
+    from {
+        transform: translateX(0%)
+    } to {
+        transform: translateX(100%);
+    }
 }
 
 @media only screen and (min-width: 600px){
@@ -55,7 +75,7 @@ ul a:hover{
         list-style-type: none;
         padding: 1%;
         display: grid;
-        margin-left: 60%;
+        margin-left: 50%;
         grid-template-columns: 1fr; 
     }
 

@@ -4,6 +4,7 @@ import './MenuOpen.css'
 const MenuOpen = () => {
     return (
       <div className="downUp">
+        <h1>Menu</h1>
         <p className="menuText">
           Please Let us know if you are allergic to any ingredient!
         </p>

@@ -2,6 +2,8 @@ import React from 'react'
 import ReactMapboxGl, { Marker } from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
+
+//dont hide this here
 const Map = ReactMapboxGl({
   accessToken:
     "pk.eyJ1IjoidmlldG5ndXllbjIyIiwiYSI6ImNrNmljeTl5MDFobXAzbnA2aGJpbWNlZ28ifQ.-lgz3jfRHGla4er4nmxbuA",

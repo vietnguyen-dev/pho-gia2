@@ -16,7 +16,7 @@ let photosArr = [
   },
   {
     id: 2,
-    url: "https://i.picsum.photos/id/455/536/354.jpg?hmac=gP9QyslkANh4zAqwZp266bO6rZZ3RqebTj9_STRKu6M",
+    url: "https://dtc-wsuv.org/vnguyen19/pho-gia-img/bun_thit_nuong.jpeg",
     alt: "Best Pho and Vietnames food in Milwakie Oregon",
   },
 ];

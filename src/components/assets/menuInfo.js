@@ -1,4 +1,4 @@
-let sections = [
+const sections = [
   {
     id: 0,
     name: "Appetizers",
@@ -628,22 +628,80 @@ let sections = [
       "All entrees served with steamed rice or rice noodles and stir fried vegetables except for entrees with *",
     items: [
       {
-        id: 0,
-        name: "Special Rice Combo",
+        id: 108,
+        name: "Beef Saute",
         description:
-          "Grilled marinated pork or chicken, shrimp, eggs, with cucumber, tomato and lettuce or stir fried vegetables",
-        price: "11.95",
+          "Stir fried with mixed vegetables in garlic sauce",
+        price: "9.95",
         dietType: "none",
       },
       {
-        id: 1,
-        name: "Chicken or Pork Fried Rice",
+        id: 109,
+        name: "Chinese Broccoli Beef",
         description:
-          "Fried rice with chien or pork, eggs, peas, corn, onions, and carrots",
-        price: "8.95",
+          "Stir fried with Chinese Broccoli, garlic, or ginger, in special homemade sauce",
+        price: "choice",
+        dietType: "vegetarian",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 110,
+        name: "Ginger Beef",
+        description:
+          "Stir fried with mixed vegetables in ginger sauce",
+        price: "9.95",
         dietType: "none",
       },
-    ],
+      {
+        id: 111,
+        name: "Spicy Garlic Beef",
+        description:
+          "Stir fried with mixed vegetables in garlic sauce",
+        price: "9.95",
+        dietType: "none",
+      },
+      {
+        id: 112,
+        name: "Spicy Lemongrass Beef",
+        description:
+          "Stir fried with mixed vegetables in mild spicy chili lemongrass sauce",
+        price: "9.95",
+        dietType: "none",
+      },
+      {
+        id: 113,
+        name: "Green or String Bean Beef *",
+        description:
+          "Stir fried with green or string bean and garlic in special homemade sauce",
+        price: "choice",
+        dietType: "vegetarian",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 114,
+        name: "Luc Lac Beef *",
+        description:
+          "Cubed beef tenderloins tossed with garlic, onions, black pepper, served with lettuce and thin sliced tomatoes",
+        price: "10.59",
+        dietType: "none",
+      },
+      {
+        id: 115,
+        name: "Pineapple Beef *",
+        description:
+          "Stir fried with pineapple in special homemade sauce",
+        price: "9.95",
+        dietType: "none",
+      },
+    ]
   },
   {
     id: 7,
@@ -652,20 +710,156 @@ let sections = [
       "All plates served with steamed rice or rice noodles and stir fried vegetables except for entrees with *",
     items: [
       {
-        id: 112,
+        id: 122,
         name: "Curry Chicken dishes",
         description:
           "Yellow, red, or green curry with potatoes mixed with vegatables and chicken",
-        price: "8.95",
+        price: "choice",
+        dietType: "both",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 123,
+        name: "Vietnamese Crepes - Banh Xeo * ",
+        description:
+          "Vietnamese savory crepe with bean sprouts, shrimp, pork or tofu, lettuce, mint, mung bean, and a side of houes fish sauce",
+        price: "11.50",
+        dietType: "vegetarian",
+      },
+      {
+        id: 124,
+        name: "Vietnamese Steak ",
+        description:
+          "Grilled flat iron steak marinated with garlic and ginger served with stir fried vegetables (steamed vegetables option for no gluten)",
+        price: "11.50",
         dietType: "gluten free",
       },
       {
-        id: 113,
-        name: "Chicken or Pork Fried Rice",
+        id: 125,
+        name: "Pepper Salted Calimari * ",
         description:
-          "Yellow, red, or green curry with potatoes mixed with vegatables and chicken",
-        price: "8.95",
+          "Crispy deep fried pepper salted calimari with carrots and onions",
+        price: "10.50",
+        dietType: "none",
+      },
+      {
+        id: 126,
+        name: "Pepper Salted Shrimp * ",
+        description:
+          "Crispy deep fried pepper salted shrimp with carrots and onions",
+        price: "10.50",
+        dietType: "none",
+      },
+      {
+        id: 127,
+        name: "Grilled Salmon",
+        description:
+          "Pacific grilled salmon with fresh stir fried vegetables",
+        price: "10.50",
         dietType: "both",
+      },
+      {
+        id: 128,
+        name: "Grilled Salmon with Banana Leaf",
+        description:
+          "Pacific grilled salmon wrapped in banana leaf for tender and juicy entree with fresh stir fried vegetables",
+        price: "11.50",
+        dietType: "both",
+      },
+      {
+        id: 129,
+        name: "Eggplant *",
+        description:
+          "Stir fried eggplants, onions, carrots, broccoli, bell peppers, mushrooms, basic in sweet chili paste",
+        price: "choice",
+        dietType: "none",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 130,
+        name: "Sweet Potatoe Noodles *",
+        description:
+          "Japanese sweet potatoe noodles stir fried with mixed vegetables, and topped with roasted seasme",
+        price: "choice",
+        dietType: "none",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 131,
+        name: "Yaki Udon *",
+        description:
+          "Japanese Udon noodles stir freid with mixed vegetables, and topped with roasted seasame",
+        price: "choice",
+        dietType: "vegetarian",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 132,
+        name: "Yaki Soba *",
+        description:
+          "Japanese Soba noodles stir freid with mixed vegetables, and topped with roasted seasame",
+        price: "choice",
+        dietType: "vegetarian",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 133,
+        name: "Pad Thai *",
+        description:
+          "Thick rice noodles stir fried with eggs bean sprouts, and ground peanuts",
+        price: "choice",
+        dietType: "vegetarian",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 134,
+        name: "Pad Kee Mao * (Drunken Noodles)",
+        description:
+          "Wide rice noodles stir fried with eggs, fresh ground chili, broccoli, bell peppers, basil leaves, and bean sprouts",
+        price: "choice",
+        dietType: "both",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
+      },
+      {
+        id: 135,
+        name: "Chow Mein Stir Fried or Crispy Noodles",
+        description:
+          "Skinny egg noodles stir fried with fresh vegetables",
+        price: "choice",
+        dietType: "both",
+        choices: [
+          {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
+          {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
+          {id: 3, meat: `Seafood - Shrimp, Scallop, Mussel, and Squid`, price: "12.95"},
+        ]
       },
     ],
   },
@@ -676,19 +870,54 @@ let sections = [
       "Smoothies, Thai Ice Tea, and Boba Tea, Milk Tea. Contains milk with or w/o dairy (coconut milk also available)",
     items: [
       {
-        id: 0,
-        name: "Special Rice Combo",
+        id: 142,
+        name: "Hot or Cold Organic Cafe Vietnam",
         description:
-          "Grilled marinated pork or chicken, shrimp, eggs, with cucumber, tomato and lettuce or stir fried vegetables",
-        price: "11.95",
+          "Vietnamese expresso coffe with condensed milk",
+        price: "3.50",
         dietType: "none",
       },
       {
-        id: 1,
-        name: "Chicken or Pork Fried Rice",
-        description:
-          "Fried rice with chien or pork, eggs, peas, corn, onions, and carrots",
-        price: "8.95",
+        id: 143,
+        name: "Smoothies",
+        description: "",
+        price: "choice",
+        dietType: "none",
+        choices: [
+          {id: 1, meat: `Boba Tea available with Tapioca Pearls, crystal boba, or rainbow jellies`, price: "4.75"},
+          {id: 2, meat: `Flavors available: Advocado, Banana, Blueberry, Coconut, Jackfruit, Taro, Mango, Pineapple, Rasberry, Cranberry, Strawberry, Almond, Peach, Red Bean, Cherry, Passion Fruit, 
+          Green Apple, Watermelon, Kiwi, Cantaloupe, Chocolate, Coffee, Green Tea, Honeydew, Lychee, Mocha Green Tea, Thai Tea, and Vanilla`, price: ""},
+          {id: 3, meat: `Additional Tapioca, Crystal, or Rainbow jellies`, price: ".50"}, 
+          {id: 4, meat: `Milk Tea`, price: "4.25"},
+          {id: 5, meat: `Banana, Black Tea, Green Tea, Coconut, Honeydew, Rose, Mango, Peach, Lavender, Strawberry, Taro, Thai Tea, Toffee, Coffee, Vanilla`, price: ""},
+        ]
+      },
+      {
+        id: 145,
+        name: "Fresh Whole Coconut",
+        description: "",
+        price: "4.95",
+        dietType: "none",
+      },
+      {
+        id: 146,
+        name: "Fresh Lemonade",
+        description: "",
+        price: "2.50",
+        dietType: "none",
+      },
+      {
+        id: 147,
+        name: "Fresh Squeezed Orange Juice",
+        description: "",
+        price: "3.50",
+        dietType: "none",
+      },
+      {
+        id: 148,
+        name: "Soft Drinks",
+        description: "",
+        price: "1.50",
         dietType: "none",
       },
     ],

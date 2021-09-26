@@ -1,3 +1,9 @@
+h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 3%;
+}
+
 .menuText{
     padding-bottom: 7%;
     text-align: center;
@@ -12,7 +18,7 @@
 }
 
 .glutenImg{
-    width: 45%;
+    width: 40%;
 }
 
 @media only screen and (min-width: 600px){
