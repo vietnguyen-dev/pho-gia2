@@ -1,4 +1,5 @@
 import React from 'react'
+import thitNuong from '../assets/bun_thit_nuong.png'
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import './ImageSlider.css'
@@ -16,7 +17,7 @@ let photosArr = [
   },
   {
     id: 2,
-    url: "https://dtc-wsuv.org/vnguyen19/pho-gia-img/bun_thit_nuong.jpeg",
+    url: thitNuong,
     alt: "Best Pho and Vietnames food in Milwakie Oregon",
   },
 ];

@@ -9,29 +9,9 @@ const Toggle = props => {
         className="toggle"
         onClick={() => props.clickEvent(!props.currentMenu)}
       >
-        {props.currentMenu && <hr style={{ borderTop: `2px solid #f5f5ff` }} />}
-
-        {props.currentMenu ? (
-          <hr style={{ borderTop: `2px solid #f5f5ff`, marginTop: `15%` }} />
-        ) : (
-          <hr
-            style={{
-              borderTop: `2px solid #f5f5ff`,
-              transform: `rotate(45deg) translateX(7px)`,
-            }}
-          />
-        )}
-
-        {props.currentMenu ? (
-          <hr style={{ borderTop: `2px solid #f5f5ff`, marginTop: `15%` }} />
-        ) : (
-          <hr
-            style={{
-              borderTop: `2px solid #f5f5ff`,
-              transform: `rotate(-45deg) translateX(7px)`,
-            }}
-          />
-        )}
+         <hr className={`toggleBar ${props.currentMenu || "turn1"}`} />
+        <hr className={`toggleBar ${props.currentMenu ? `show` : `hidden`}`}/>
+        <hr className={`toggleBar ${props.currentMenu || 'turn2'}`} />
       </button>
     );
     };

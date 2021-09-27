@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-//import WidthContext from '../../store/width-context';
+import Logo from '../UI/Logo';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Menu from '../Pages/Menu';
 import Home from '../Pages/Home';
@@ -36,11 +36,13 @@ const Body = () => {
           <div className="wholeBar">
             <div className="navDiv">
               <div>
-                <p></p>
+                <Logo/>
               </div>
-              <Toggle clickEvent={settingMenu} currentMenu={menuState}/>
-              <NavBar />
+              <div>
+                <Toggle clickEvent={settingMenu} currentMenu={menuState}/>
+              </div>
             </div>
+            <NavBar />
           </div>
           <Switch>
             <Route exact path="/">

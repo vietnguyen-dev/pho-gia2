@@ -24,6 +24,11 @@ const MenuOpen = () => {
             className="glutenImg imgLeft"
           />
         </div>
+        <div className='center callInOrder'>
+          <a href="tel:5033035442">
+            <button>Call in to Order Here</button>
+          </a>
+        </div>
       </div>
     );
 }

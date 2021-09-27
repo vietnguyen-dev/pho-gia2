@@ -16,89 +16,14 @@ menu, nav, output, ruby, section, summary,time, mark, audio, video {
 
 html{
    font-family: 'Montserrat', sans-serif;
+   background-color: #6A3940;
+   color: #f5f5ff;
+}
+
+h1{
+	font-weight: bold;
 }
 
 .map-container {
 	height: 300px;
-}
-
-.topDown{
-	animation: topDown 1s;
-	z-index: 1;
-}
-
-@keyframes topDown{
-	0%{
-		opacity: 0;
-		transform: translateY(-100%)
-	}
-	100%{
-		opacity: 1;
-		transform: translateY(0%)
-	}
-}
-
-.leftCenter{
-	animation: leftCenter 1.1s;
-	z-index: 1;
-}
-
-@keyframes leftCenter{
-	0%{
-		opacity: 0;
-		transform: translateX(-100%)
-	}
-	100%{
-		opacity: 1;
-		transform: translateX(0%)
-	}
-}
-
-.rightCenter{
-	animation: rightCenter .3s;
-	z-index: 1;
-}
-
-@keyframes rightCenter{
-	0%{
-		transform: translateX(100%)
-	}
-	100%{
-		transform: translateX(0%)
-	}
-}
-
-.centerRight{
-	animation: centerRight .3s;
-	z-index: 1;
-}
-
-@keyframes centerRight{
-	0%{
-		transform: translateX(0%)
-	}
-	100%{
-		
-		transform: translateX(100%)
-	}
-}
-.centerStay{
-	transform: translateX(100%)
-}
-
-
-.downUp{
-	animation: downUp 1.1s;
-	z-index: 1;
-}
-
-@keyframes downUp{
-	0%{
-		opacity: 0;
-		transform: translateY(100%)
-	}
-	100%{
-		opacity: 1;
-		transform: translateY(0%)
-	}
 }

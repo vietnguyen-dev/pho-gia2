@@ -6,6 +6,14 @@
     width: 80%;
 }
 
+.turn1{
+    transform: rotate(45deg) translateX(7px);
+}
+
+.turn2{
+    transform: rotate(-45deg) translateX(7px);
+}
+
 @media only screen and (min-width: 600px){
     .toggle{
         display: none;

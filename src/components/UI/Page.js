@@ -2,7 +2,7 @@
 
 const Page = props => {
     return (
-      <div style={{ backgroundColor: `#f5f5ff` }}>
+      <div style={{ backgroundColor: `#6A3940` }}>
         {props.children}
       </div>
     );

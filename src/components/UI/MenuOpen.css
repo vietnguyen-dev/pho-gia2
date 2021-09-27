@@ -21,6 +21,25 @@ h1{
     width: 40%;
 }
 
+.callInOrder{ 
+    margin: 3%;
+    padding: 5% 5%;
+    background-color: #6A3940;
+    /* box-shadow: #ececea  2px 2px 5px; */
+    border-radius: 10px;;
+    /* font-size: 2vh; */
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: 1px solid #ececea;
+    color: #f5f5ff;
+    letter-spacing: 2px;
+}
+
+.callInOrder:hover{
+    background-color: #ececea;
+    color: #6A3940;
+}
+
 @media only screen and (min-width: 600px){
     .menuText{
         padding-bottom: 3%;

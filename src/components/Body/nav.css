@@ -7,7 +7,6 @@
 
 .navLink{
   padding: 5%;
-  margin-left: 5%;
   color: #fafaf3;
 }
 
@@ -18,15 +17,18 @@
 }
 
 .navItems{
-    /* position: absolute;
-    top: 8%; */
-    right: 0px;
+    z-index: 1000;
+    position: absolute;
+    right: 0%;
+    padding: 3%;
+    text-align: center;
+    width: 35%;
     list-style-type: none;
     background-color: #6A3940;
+    font-weight: bold;
+    font-size: 2rem;
     z-index: 1;
-    height: 100%;
-    width: 50%;
-    opacity: .7;
+    opacity: .9;
 }
 
 a{
@@ -37,6 +39,8 @@ ul a {
     color: #fafaf3;
     font-size: 2.3vh;
     margin: 2% ; 
+    margin: 5%;
+    padding: 3%;
 }
 
 ul a:hover{
@@ -44,28 +48,28 @@ ul a:hover{
 }
 
 .hide{
-    transform: translateX(100%);
+    display: none;
     /* animation: hide .3s .1s; */
 }
 
 .show{
-    transform: translateX(0%);
+    display: block;
     /* animation: show .3s .1s; */
 }
 
 @keyframes show {
     from {
-        transform: translateX(100%)
+        transform: translateY(100%)
     } to {
-        transform: translateX(0%);
+        transform: translateY(0%);
     }
 }
 
 @keyframes hide {
     from {
-        transform: translateX(0%)
+        transform: translateY(0%)
     } to {
-        transform: translateX(100%);
+        transform: translateY(100%);
     }
 }
 
@@ -88,6 +92,8 @@ ul a:hover{
     }
 
     .navItems{
+        position: relative;
+        padding-top: 0%;
         position: relative;
         right: 0px;
         list-style-type: none;
