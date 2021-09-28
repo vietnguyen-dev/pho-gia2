@@ -2,23 +2,29 @@
     margin-bottom: 5%;
     display: grid;
     grid-template-columns: 5% 75% 20%;
-    grid-gap: 1vh;
+    grid-gap: 2%;
     padding: 2% 3%;
 }
 
 .itemHead{
-    font-size: 2vh;
-    padding-bottom: 1%;
+    font-size: 1.2rem;
+    margin-bottom: 1%;
     font-weight: bold;
 }
 
+.itemHeader{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .itemBody{
-    font-size: 1.75vh;
-    padding-bottom: 2%;
+    font-size: .9rem;
+    margin-bottom: 2%;
     font-weight: lighter;
 }
 
 
 .itemPrice{
-    font-size: 2vh;
+    font-size: 1rem;
+    font-weight: bold;
 }

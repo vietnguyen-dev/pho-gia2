@@ -12,9 +12,11 @@ const MenuItem = props => {
           <p>{props.itemNum}.</p>
         </div>
         <div>
-          <h3 className="itemHead">{props.name}</h3>
+          <div className='itemHeader'>
+            <h3 className="itemHead">{props.name}</h3>
+            <DietType type={props.dietType} />
+          </div>
           <p className="itemBody">{props.description}</p>
-          <DietType type={props.dietType} />
           { choice && <Choices choices={props.choices} /> }
         </div>
         <div>

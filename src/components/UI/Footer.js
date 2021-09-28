@@ -4,7 +4,7 @@ import "./About.css";
 const Footer = () => {
     return (
       <div className="greenBack mainText">
-        <div>
+        {/* <div>
           Icons made by{" "}
           <a href="https://smashicons.com/" title="Smashicons">
             Smashicons
@@ -23,10 +23,10 @@ const Footer = () => {
           <a href="https://www.flaticon.com/" title="Flaticon">
             www.flaticon.com
           </a>
-        </div>
-        <div>
+        </div> */}
+        <div style={{padding: `2% 3%`}}>
           <p>
-            Designed and Developed by <a href="https://vietnguyen.dev/">Spaces by Viet</a>
+            <a style={{textDecoration: `none`, color: `white`}}href="https://vietnguyen.dev/">Viet Nguyen | 2021</a>
           </p>
         </div>
       </div>

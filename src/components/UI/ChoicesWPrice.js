@@ -1,11 +1,14 @@
 import React from 'react'
+import './ChoicesWPrice.css'
 
 const Choices = (props) => {
     return (
-        <ul>
+        <table className='choiceList'> 
             {props.choices.map(choice =>
-                <li key={choice.id}>{choice.meat} {choice.price}</li>)}
-        </ul>
+                <tr key={choice.id}>
+                    <td className='choiceItem' >{choice.meat}</td> <td> {choice.price}</td>
+                </tr>)}
+        </table>
     )
 }
 
