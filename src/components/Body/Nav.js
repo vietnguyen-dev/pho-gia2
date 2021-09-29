@@ -38,7 +38,7 @@ const Body = () => {
               <div>
                 <Logo/>
               </div>
-              <div>
+              <div className="toggle">
                 <Toggle clickEvent={settingMenu} currentMenu={menuState}/>
               </div>
             </div>

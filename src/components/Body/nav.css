@@ -17,6 +17,7 @@
 }
 
 .navItems{
+    align-items: center;
     z-index: 1000;
     position: absolute;
     right: 0%;
@@ -74,6 +75,10 @@ ul a:hover{
 }
 
 @media only screen and (min-width: 600px){
+    .toggle{
+        display: none;
+    }
+
     .navDiv {
         display: block;
         list-style-type: none;
@@ -89,6 +94,8 @@ ul a:hover{
 
     .wholeBar{
         background-color: #6A3940;
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .navItems{
@@ -101,10 +108,10 @@ ul a:hover{
         z-index: 5;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        height: 7%;
+        /* height: 4%; */
     }
 }
 
 @media only screen and (min-width: 800px){
-
+   
 }

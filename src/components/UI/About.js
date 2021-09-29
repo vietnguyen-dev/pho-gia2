@@ -1,6 +1,6 @@
 import React from 'react'
 import BunThitNuong from '../assets/bun_thit_nuong_crop.png'
-import Pho from '../assets/pho_cropped.png'
+// import Pho from '../assets/pho_cropped.png'
 import './About.css'
 import Menu from '../Pages/Menu';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";

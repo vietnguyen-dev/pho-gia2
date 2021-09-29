@@ -886,7 +886,7 @@ const sections = [
         choices: [
           {id: 1, meat: `Boba Tea available with Tapioca Pearls, crystal boba, or rainbow jellies`, price: "4.75"},
           {id: 2, meat: `Flavors available: Advocado, Banana, Blueberry, Coconut, Jackfruit, Taro, Mango, Pineapple, Rasberry, Cranberry, Strawberry, Almond, Peach, Red Bean, Cherry, Passion Fruit, 
-          Green Apple, Watermelon, Kiwi, Cantaloupe, Chocolate, Coffee, Green Tea, Honeydew, Lychee, Mocha Green Tea, Thai Tea, and Vanilla`, price: ""},
+          Green Apple, Watermelon, Kiwi, Cantaloupe, Chocolate, Coffee, Green Tea, Honeydew, Lychee, Mocha Green Tea, Thai Tea, and Vanilla`, price: " "},
           {id: 3, meat: `Additional Tapioca, Crystal, or Rainbow jellies`, price: ".50"}, 
           {id: 4, meat: `Milk Tea`, price: "4.25"},
           {id: 5, meat: `Banana, Black Tea, Green Tea, Coconut, Honeydew, Rose, Mango, Peach, Lavender, Strawberry, Taro, Thai Tea, Toffee, Coffee, Vanilla`, price: ""},

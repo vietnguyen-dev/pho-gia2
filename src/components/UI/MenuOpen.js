@@ -17,12 +17,20 @@ const MenuOpen = () => {
           />
         </div>
         <div className="mealOptions">
-          <p>Gluten Meal or Option Available </p>
-          <img
+          <table>
+            <tbody>
+              <tr>
+                <td>Gluten Meal or Option Available </td>
+                <td>
+                <img
             alt="gluten free meals and options available"
             src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/gluten-free.png"
             className="glutenImg imgLeft"
           />
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div className='center callInOrder'>
           <a href="tel:5033035442">

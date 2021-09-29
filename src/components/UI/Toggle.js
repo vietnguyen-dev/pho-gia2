@@ -6,7 +6,7 @@ const Toggle = props => {
 
     return (
       <button
-        className="toggle"
+      className='toggle'
         onClick={() => props.clickEvent(!props.currentMenu)}
       >
          <hr className={`toggleBar ${props.currentMenu || "turn1"}`} />
