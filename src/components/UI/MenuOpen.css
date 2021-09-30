@@ -15,10 +15,12 @@ h1{
     padding-bottom: 5%;
     padding-left: 5%;
     text-align: center;
+    align-items: center;
+
 }
 
 .glutenImg{
-    width: 40%;
+    width: 12%;
 }
 
 .callInOrder{
