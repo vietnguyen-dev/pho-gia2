@@ -14,13 +14,15 @@ h1{
     grid-template-columns: 85% 15%;
     padding-bottom: 5%;
     padding-left: 5%;
+    /* margin: 0 auto; */
     text-align: center;
     align-items: center;
+    /* border: 1px solid black; */
 
 }
 
 .glutenImg{
-    width: 12%;
+    width: 50%;
 }
 
 .callInOrder{

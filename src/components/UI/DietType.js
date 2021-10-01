@@ -1,4 +1,5 @@
 import React from 'react'
+import './DietType.css'
 
 const DietType = props => {
    if (props.type === 'none'){
@@ -7,7 +8,7 @@ const DietType = props => {
        return (
          <img
            alt="vegetarian meals and options available"
-           src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/vegan.png"
+           src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/vegetarian.png"
          />
        );
    } else if (props.type === 'gluten free'){
@@ -15,7 +16,7 @@ const DietType = props => {
          <img
            alt="gluten free meals and options available"
            src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/gluten-free.png"
-           style={{ width: `11%` }}
+           className='dietImg'
          />
        );
    } else if (props.type === 'both'){
@@ -23,12 +24,12 @@ const DietType = props => {
            <div>
              <img
                alt="vegetarian meals and options available"
-               src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/vegan.png"
+               src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/vegetarian.png"
              />
              <img
                alt="gluten free meals and options available"
                src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/gluten-free.png"
-               style={{ width: `11%` }}
+               className='dietImg'
              />
            </div>
          );

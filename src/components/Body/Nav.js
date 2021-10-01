@@ -9,24 +9,20 @@ import './nav.css'
 const Body = () => {
     const [menuState, setMenuState] = useState(true);
 
-    // useEffect(() =>{
-    //   console.log(menuState)
-    // }, [menuState])
-
     const settingMenu = state =>{
       setMenuState(state)
     }
 
     const NavBar = () =>{
       return (
-        <ul className={`navItems ${menuState ? `hide` : `show`}`}>
-          <li onClick={() => settingMenu(true)} className="navLink">
-            <Link to="/">Home</Link>
-          </li>
-          <li onClick={() => settingMenu(true)} className="navLink">
-            <Link to="/menu">Menu</Link>
-          </li>
-        </ul>
+          <ul className={`navItems ${menuState ? `hide` : `show`}`}>
+            <li onClick={() => settingMenu(true)} className="navLink">
+              <Link to="/">Home</Link>
+            </li>
+            <li onClick={() => settingMenu(true)} className="navLink">
+              <Link to="/menu">Menu</Link>
+            </li>
+          </ul> 
       );
     }
 

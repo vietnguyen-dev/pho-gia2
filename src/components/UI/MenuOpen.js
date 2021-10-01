@@ -8,26 +8,22 @@ const MenuOpen = () => {
         <p className="menuText">
           Please Let us know if you are allergic to any ingredient!
         </p>
-          <table className="mealOptions">
-            <tbody>
-              <tr>
-                <td>Gluten Meal or Option Available </td>
-                <td>
-                  <img
-              alt="gluten free meals and options available"
-              src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/gluten-free.png"
-              className="glutenImg imgLeft" />
-                </td>
-              </tr>
-              <tr>
-                <td>Vegetarian Meal or Option Available</td>
-                <td><img
+        <div className="mealOptions">
+          <p>Vegetarian Meal or Option Available </p>
+          <img
             alt="vegetarian meals and options available"
             src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/vegan.png"
-            className="imgLeft"/> </td>
-              </tr>
-            </tbody>
-          </table>
+            className="imgLeft"
+          />
+        </div>
+        <div className='mealOptions'>
+          <p>Gluten Meal or Option Available </p>
+          <img
+            alt="gluten free meals and options available"
+            src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/gluten-free.png"
+            className="imgLeft"
+          />
+        </div>
         <div className='center callInOrder'>
           <a href="tel:5033035442">
             <button>Call in to Order Here</button>

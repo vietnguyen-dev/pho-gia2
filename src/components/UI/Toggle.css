@@ -1,19 +1,51 @@
 .toggle{
-    background-color: #6A3940;;
+    background-color: white;
     padding: 0;
     border: none;
     margin: 1%;
     width: 80%;
+    color: #6A3940;
 }
 
 .turn1{
-    transform: rotate(45deg) translateX(7px);
+    animation: topBar .5s;
+    transform: rotate(45deg) translateY(12px);
 }
 
 .turn2{
-    transform: rotate(-45deg) translateX(7px);
+    animation: midBar .3s;
+    opacity: 0;
 }
 
-@media only screen and (min-width: 600px){
-    
+.turn3{
+    animation: bottomBar .3s;
+    transform: rotate(-45deg) translateY(-12px)
+}
+
+@keyframes topBar {
+    0%{
+        transform: rotate(0deg);
+    } 
+    100%{
+        transform: rotate(45deg) translateY(12px);
+    }
+}
+
+@keyframes midBar {
+    0% {
+        opacity: 100%;
+    }
+    100%{
+        transform: translateX(-100%);
+        opacity: 0%;
+    }
+}
+
+@keyframes bottomBar {
+    0%{
+        transform: rotate(0deg);
+    } 
+    100%{
+        transform: rotate(-45deg) translateY(-12px)
+    }
 }

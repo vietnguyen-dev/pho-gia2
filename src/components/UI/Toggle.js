@@ -9,9 +9,9 @@ const Toggle = props => {
       className='toggle'
         onClick={() => props.clickEvent(!props.currentMenu)}
       >
-         <hr className={`toggleBar ${props.currentMenu || "turn1"}`} />
-        <hr className={`toggleBar ${props.currentMenu ? `show` : `hidden`}`}/>
-        <hr className={`toggleBar ${props.currentMenu || 'turn2'}`} />
+        <hr className={`toggleBar ${props.currentMenu || "turn1"}`} />
+        <hr className={`toggleBar ${props.currentMenu || 'turn2'}`}/>
+        <hr className={`toggleBar ${props.currentMenu || 'turn3'}`} />
       </button>
     );
     };

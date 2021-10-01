@@ -6,16 +6,6 @@ import Menu from '../Pages/Menu';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const About = () => {
-    // let randImg = () =>{
-    //   let randNum = 2
-    //   if ( randNum === 2){
-    //     return Pho
-    //   }
-    //   if (randNum === 1){
-    //     return BunThitNuong
-    //   }
-    // }
-
     return (
       <div className="main">
           <h1 className="mainHeading topDown">Welcome to <br/><span className='phoGiaHead'>Pho Gia Milwaukie</span></h1>

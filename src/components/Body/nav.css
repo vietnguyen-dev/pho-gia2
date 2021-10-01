@@ -6,12 +6,13 @@
 }
 
 .navLink{
-  padding: 5%;
+  padding: 3%;
+  margin: 2%;
   color: #fafaf3;
 }
 
 .wholeBar{
-    background-color: #6A3940;
+    background-color: white;
     position: sticky;
     top: 0;
 }
@@ -21,60 +22,73 @@
     z-index: 1000;
     position: absolute;
     right: 0%;
-    padding: 3%;
+    padding: 1%;
     text-align: center;
-    width: 35%;
+    width: 20%;
     list-style-type: none;
-    background-color: #6A3940;
+    background-color: white;
     font-weight: bold;
     font-size: 2rem;
     z-index: 1;
-    opacity: .9;
+    /* border: 1px solid black; */
 }
 
 a{
     text-decoration: none;
 }
 
-ul a {
-    color: #fafaf3;
-    font-size: 2.3vh;
-    margin: 2% ; 
-    margin: 5%;
-    padding: 3%;
+ul li a{
+    color: #6A3940;
+    font-size: 2.3vh; 
+    /* margin: 5%;
+    padding: 3%; */
 }
 
-ul a:hover{
-    border-bottom: 1px solid #fafaf3;
+.navLink a:after{
+  display: block;
+  content: '';
+  border-bottom: 3px solid #6A3940;
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.navLink a:hover:after{
+    transform: scaleX(1);
 }
 
 .hide{
-    display: none;
     /* animation: hide .3s .1s; */
+    transform: translateX(100%)
 }
 
 .show{
-    display: block;
-    /* animation: show .3s .1s; */
+    animation: show .3s;
+    /* display: block; */
+    -webkit-box-shadow: -5px 20px 15px 5px #FFF5F9;
+    box-shadow: -5px 20px 25px 5px #FFF5F9;
 }
 
 @keyframes show {
     from {
-        transform: translateY(100%)
+        transform: translateX(100%)
     } to {
-        transform: translateY(0%);
+        transform: translateX(0%);
     }
 }
 
 @keyframes hide {
     from {
-        transform: translateY(0%)
+        transform: translateX(0%)
     } to {
-        transform: translateY(100%);
+        transform: translateX(100%);
     }
 }
 
 @media only screen and (min-width: 600px){
+    ul li{
+        margin-right: 20%;
+    }
+
     .toggle{
         display: none;
     }
@@ -84,34 +98,28 @@ ul a:hover{
         list-style-type: none;
         padding: 1%;
         display: grid;
-        margin-left: 50%;
+        margin-left: 35%;
         grid-template-columns: 1fr; 
     }
 
-    .navLink{
-        color: #fafaf3;
-    }
-
     .wholeBar{
-        background-color: #6A3940;
         display: grid;
         grid-template-columns: auto auto;
     }
 
     .navItems{
-        position: relative;
-        padding-top: 0%;
-        position: relative;
-        right: 0px;
+        position: static;
         list-style-type: none;
-        background-color: #6A3940;
         z-index: 5;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        /* height: 4%; */
+        /* display: grid;
+        grid-template-columns:auto auto; */
+        display: flex;
     }
 }
 
 @media only screen and (min-width: 800px){
+    .navLink{
+        margin: 5%;
+    }
    
 }

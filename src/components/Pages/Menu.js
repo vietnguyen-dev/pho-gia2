@@ -5,13 +5,14 @@ import {
 } from "react-accessible-accordion";
 import sections from '../assets/menuInfo';
 import MenuOpen from '../UI/MenuOpen';
+import './Menu.css'
 
 // Demo styles, see 'Styles' section below for some notes on use.
 import "react-accessible-accordion/dist/fancy-example.css";
 
 const Menu = () => {
     return (
-      <>
+      <div className="menu">
         <MenuOpen />
         <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
           {sections.map((section) => (
@@ -24,7 +25,7 @@ const Menu = () => {
             />
           ))}
         </Accordion>
-      </>
+      </div>
     );
 }
 

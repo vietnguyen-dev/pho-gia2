@@ -1,0 +1,9 @@
+.dietImg{
+    width: 45%;
+}
+
+@media only screen and (min-width: 600px){
+    .dietImg{
+        width: 25%;
+    }
+}
