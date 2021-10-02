@@ -27,6 +27,7 @@ const MenuSection = props => {
               description={item.description}
               price={item.price}
               choices={item.choices}
+              image={item.image}
             />
           ))}
         </AccordionItemPanel>

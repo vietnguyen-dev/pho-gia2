@@ -9,7 +9,7 @@ const About = () => {
     return (
       <div className="main">
         <div>
-          <h1 className="mainHeading topDown">Welcome to <br/><span className='phoGiaHead'>Pho Gia Milwaukie</span></h1>
+          <h1 className="mainHeading topDown">Pho Gia Milwaukie</h1>
           <div className='mainText'>
             <p>
               Vietnamese restaurant serving pho soups, noodles and rice dishes in
