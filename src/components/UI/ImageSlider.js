@@ -1,5 +1,5 @@
 import React from 'react'
-import thitNuong from '../assets/bun_thit_nuong.png'
+import thitNuong from '../assets/bun_thit_nuong_crop.png'
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import './ImageSlider.css'

@@ -1,3 +1,7 @@
+.slideContainer{
+    margin: 4% 5%;
+}
+
 .imgTextDiv{
     padding: 20%;
     display: flex;
@@ -6,7 +10,7 @@
 }
 
 .slideDiv{
-    height: 40vh;
+    height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,4 +26,16 @@
     background-color: black;
     opacity: .8;
     color: white;
+}
+
+
+@media only screen and (min-width: 600px){
+   /* .slideDiv{
+       height: 30vh;
+       width: 30vh;
+   } */
+}
+
+@media only screen and (min-width: 800px){
+   
 }

@@ -80,13 +80,20 @@
     color: #f5f5ff;
     border: 1px solid#ececea;
 }
-
 @media only screen and (min-width: 600px){
-  .main button, .contactLink{
+  /* .main button, .contactLink{
     padding: 2% 3%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 800px){
-   
+   .main{
+        margin-right: 15%;
+        margin-left: 15%;
+        display: flex;
+   }
+
+   .mainHeading, .mainText{
+        text-align: left;
+   }
 }
