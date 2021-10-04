@@ -1,6 +1,7 @@
 import React from 'react'
 import BunThitNuong from '../assets/bun_thit_nuong_crop.png'
 // import Pho from '../assets/pho_cropped.png'
+import PhoTai from '..assets/img/pho-tai.jpg'
 import './About.css'
 import Menu from '../Pages/Menu';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -34,7 +35,7 @@ const About = () => {
               </a>
           </div>
         </div>
-        <img className='foodBack topMargin' src={BunThitNuong} alt='bun thit nuong' />
+        <img className='foodBack topMargin' src={PhoTai} alt='bun thit nuong' />
         <Router>
         <Switch>
             <Route exact path="/menu">

@@ -1009,7 +1009,28 @@ const sections = [
         image: 'none',
       },
     ],
-  },
+  },{
+    id: 9,
+    name: 'Deserts',
+    servedWith: "",
+    items: [
+      { id: 163,
+        name: 'Ice Cream',
+        description: 'French vanilla, Chocolate, Strawberry, Mango, Green Tea, Coconut, Advocado, or Jackfruit',
+        price: '2.50',
+        dietType: 'none',
+        image: 'none'
+      }, {
+        id: 164,
+        name: 'Flan',
+        price: '4.95',
+        dietType: 'none',
+        image: 'none'
+      },
+     
+      
+    ]
+  }
 ];
 
 

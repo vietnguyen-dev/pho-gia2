@@ -7,6 +7,8 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 
+import './MenuSection.css'
+
 // Demo styles, see 'Styles' section below for some notes on use.
 import "react-accessible-accordion/dist/fancy-example.css";
 
@@ -16,7 +18,7 @@ const MenuSection = props => {
         <AccordionItemHeading>
           <AccordionItemButton>{props.name}</AccordionItemButton>
         </AccordionItemHeading>
-        <AccordionItemPanel>
+        <AccordionItemPanel className='gridOnDesk'>
           <p style={{padding: `2% 3%`, lineHeight: `1.5`, textAlign: `center`}}>{props.servedWith}</p>
           {props.menuItem.map((item) => (
             <MenuItem
