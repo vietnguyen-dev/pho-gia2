@@ -1,11 +1,12 @@
 import React from 'react'
+import PhoGiaLogo from '../assets/img/pho-gia-logo-background-removed.png'
 import './Logo.css'
 
 const Logo = props => {
     return (
       <div>
         <img
-          src="https://dtc-wsuv.org/vnguyen19/pho-gia-img/pho-gia-logo.png"
+          src={PhoGiaLogo}
           alt="pho gia milwaukie logo"
           className="img"
         />

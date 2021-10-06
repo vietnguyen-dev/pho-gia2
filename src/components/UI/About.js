@@ -1,7 +1,7 @@
 import React from 'react'
-import BunThitNuong from '../assets/bun_thit_nuong_crop.png'
+// import BunThitNuong from '../assets/bun_thit_nuong_crop.png'
 // import Pho from '../assets/pho_cropped.png'
-import PhoTai from '..assets/img/pho-tai.jpg'
+import PhoTai from '../assets/img/pho-tai.jpg'
 import './About.css'
 import Menu from '../Pages/Menu';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -10,12 +10,15 @@ const About = () => {
     return (
       <div className="main">
         <div>
-          <h1 className="mainHeading topDown">Pho Gia Milwaukie</h1>
+          <h1 className="mainHeading topDown">Pho Gia</h1>
           <div className='mainText'>
             <p>
               Vietnamese restaurant serving pho soups, noodles and rice dishes in
               simple, traditional digs.
             </p>
+            <div className='topMargin'>
+              <p>Milwaukie Location</p>
+            </div>
             <div className='topMargin'>
               <p>Open Daily 11:00 AM - 9:00 PM </p>
               <p>Full Bar Service | Dine In and To Go</p>
