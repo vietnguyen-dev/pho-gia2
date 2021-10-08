@@ -25,6 +25,9 @@ h1{
 	font-size: 1vh;
 }
 
-.map-container {
-	height: 300px;
+.grow {
+	 transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+	transform: scale(1.1);
 }

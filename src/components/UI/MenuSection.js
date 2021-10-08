@@ -18,8 +18,9 @@ const MenuSection = props => {
         <AccordionItemHeading>
           <AccordionItemButton>{props.name}</AccordionItemButton>
         </AccordionItemHeading>
-        <AccordionItemPanel className='gridOnDesk'>
+        <AccordionItemPanel>
           <p style={{padding: `2% 3%`, lineHeight: `1.5`, textAlign: `center`}}>{props.servedWith}</p>
+          <div className='gridOnDesk'>
           {props.menuItem.map((item) => (
             <MenuItem
               key={item.id}
@@ -32,6 +33,7 @@ const MenuSection = props => {
               image={item.image}
             />
           ))}
+          </div>
         </AccordionItemPanel>
       </AccordionItem>
     );

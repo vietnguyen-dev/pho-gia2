@@ -10,7 +10,7 @@ const sections = [
         description: "Rice paper rolls with shrimp or prl or chicken or beef",
         price: "choice",
         dietType: "gluten free",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/goi-cuon.png',
+        image: '/goi-cuon.png',
         choices: [ 
           {id: 1, meat: `Chicken, Pork, or Tofu`, price: 5.50},
           {id: 2, meat: `Beef or Shrimp`, price: 5.95},
@@ -128,7 +128,7 @@ const sections = [
           "Beef, lettuce, cilantro, red bell pepper, cucumber, dry pepper, tomatoes fried shallots, tappes with roasted peanuts",
         price: "11.95",
         dietType: "none",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/goi-bo.JPG',
+        image: '/goi-bo.JPG',
       },
       {
         id: 19,
@@ -137,7 +137,7 @@ const sections = [
           "Finely shredded cabbage, chicken, cilantro, red bell pepper, fried shallots, pickled carrots and radish, roasted peanuts tossed in our special homemade sauce",
         price: "9.50",
         dietType: "gluten free",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/goi-ga.jpg',
+        image: 'none',
       },
       {
         id: 20,
@@ -176,7 +176,7 @@ const sections = [
         description: "Beef Round Steak",
         price: "9.50",
         dietType: "none",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/pho-tai.jpg'
+        image: '/pho-tai.png'
       },
       {
         id: 29,
@@ -208,7 +208,7 @@ const sections = [
         description: "Beef Round Steak and beef tripe",
         price: "9.50",
         dietType: "none",
-        image: 'none',
+        image: '/pho-tai-sach.png',
       },
       {
         id: 33,
@@ -240,7 +240,7 @@ const sections = [
         description: "Shrimp, scallop, mussle, squid, brocolli, zucchini, and mushroom",
         price: "11.50",
         dietType: "none",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/pho-hai-san.jpg'
+        image: 'none'
       },
       {
         id: 37,
@@ -415,7 +415,7 @@ const sections = [
           "Shrimps, scallops, mussel, squid, quail eggs, onion, celery, chives, topped with fried shallots with pork broth",
         price: "8.95",
         dietType: "none",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/hu-tieu-mi.jpg'
+        image: '/hu-tieu-mi.jpg'
       },
       {
         id: 61,
@@ -442,7 +442,7 @@ const sections = [
           "Ramen noodles, cilantro, onions, chives, celery, and topped with fried shallots with chicken or pork broth",
         price: "choice",
         dietType: "none",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/ramen.jpg',
+        image: '',
         choices: [
           {id: 1, meat: `Chicken, Pork, or Tofu`, price: "10.50"},
           {id: 2, meat: `Beef or Shrimp`, price: "11.50"},
@@ -463,7 +463,7 @@ const sections = [
         description: "Bowl of vermicelli with grilled marinated pork",
         price: "9.95",
         dietType: "none",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/bun-thit-nuong.jpg'
+        image: '/bun_thit_nuong_crop.png'
       },
       {
         id: 71,
@@ -487,7 +487,7 @@ const sections = [
         description: "Bowl of vermicelli with grilled marinated pork and shrimp",
         price: "10.95",
         dietType: "none",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/bun-dac-biet.jpg'
+        image: '/bun-dac-biet.jpg'
       },
       {
         id: 74,
@@ -503,7 +503,7 @@ const sections = [
         description: "Bowl of vermicelli with deep fried crispy egg rolls",
         price: "10.95",
         dietType: "none",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/bun-cha-gio.jpg'
+        image: '/bun-cha-gio.jpg'
       },
       {
         id: 76,
@@ -519,7 +519,7 @@ const sections = [
         description: "Bowl of vermicelli noodles with choice of grilled marinated pork or chicken, shrimp, and deep fried vegetarian crispy egg rolls",
         price: "12.95",
         dietType: "none",
-        image: 'none',
+        image: '/77.png',
       },
       {
         id: 78,
@@ -585,7 +585,7 @@ const sections = [
           "Fried rice with chicken or pork, eggs, peas, corn, onions, and carrots",
         price: "choice",
         dietType: "none",
-        image: 'none',
+        image: '/com-chien.jpg',
         choices: [
           {id: 1, meat: `Chicken, Pork, or Tofu`, price: "9.95"},
           {id: 2, meat: `Beef or Shrimp`, price: "10.95"},
@@ -762,7 +762,7 @@ const sections = [
         description: "Cubed beef tenderloins tossed with garlic, onions, black pepper, served with lettuce and thin sliced tomatoes",
         price: "10.59",
         dietType: "none",
-        image: 'none',
+        image: '/bo-luc-lac.jpg',
       },
       {
         id: 115,
@@ -799,7 +799,7 @@ const sections = [
         description: "Vietnamese savory crepe with bean sprouts, shrimp, pork or tofu, lettuce, mint, mung bean, and a side of houes fish sauce",
         price: "11.50",
         dietType: "vegetarian",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/banh-xeo.jpg'
+        image: '/banh-xeo.png'
       },
       {
         id: 124,
@@ -958,7 +958,7 @@ const sections = [
           "Vietnamese expresso coffe with condensed milk",
         price: "3.50",
         dietType: "none",
-        image: 'none',
+        image: '/cafe-sua-da.png',
       },
       {
         id: 143,
@@ -966,7 +966,7 @@ const sections = [
         description: "",
         price: "choice",
         dietType: "none",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/boba.jpg',
+        image: 'none',
         choices: [
           {id: 1, meat: `Boba Tea available with Tapioca Pearls, crystal boba, or rainbow jellies`, price: "4.75"},
           {id: 2, meat: `Flavors available: Advocado, Banana, Blueberry, Coconut, Jackfruit, Taro, Mango, Pineapple, Rasberry, Cranberry, Strawberry, Almond, Peach, Red Bean, Cherry, Passion Fruit, 
@@ -982,7 +982,7 @@ const sections = [
         description: "",
         price: "4.95",
         dietType: "none",
-        image: 'https://dtc-wsuv.org/vnguyen19/pho-gia-img/dua-tuoi.jpg'
+        image: 'none'
       },
       {
         id: 146,

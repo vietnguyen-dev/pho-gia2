@@ -6,5 +6,8 @@
 }
   
 @media only screen and (min-width: 800px){
-     
+    .menu{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 }

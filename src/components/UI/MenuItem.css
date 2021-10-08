@@ -1,7 +1,7 @@
 .menuItem{
     margin-bottom: 5%;
     display: grid;
-    grid-template-columns: 10% 70% 20%;
+    grid-template-columns: 7% 72% 25%;
     grid-gap: 2%;
     padding: 2% 3%;
 }

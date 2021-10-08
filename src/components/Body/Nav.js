@@ -16,10 +16,10 @@ const Body = () => {
     const NavBar = () =>{
       return (
           <ul className={`navItems ${menuState ? `hide` : `show`}`}>
-            <li onClick={() => settingMenu(true)} className="navLink">
+            <li onClick={() => settingMenu(true)} className="navLink grow">
               <Link to="/">Home</Link>
             </li>
-            <li onClick={() => settingMenu(true)} className="navLink">
+            <li onClick={() => settingMenu(true)} className="navLink grow">
               <Link to="/menu">Menu</Link>
             </li>
           </ul> 
